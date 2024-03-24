@@ -8,11 +8,13 @@
 
 //  Доповни код функції так, щоб вона повертала рядок з повідомленням про 
 // покупку ремонтних дроїдів: "You ordered <quantity> droids worth <totalPrice> credits!",
-//  де: • <quantity> — це кількість замовлених дроїдів • <totalPrice> — це загальна вартість замовлення, 
+//  де: • <quantity> — це кількість замовлених дроїдів • <totalPrice> — це загальна
+//  вартість замовлення, 
 //  тобто вартість усіх замовлених дроїдів
 
 
-// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності 
+// її роботи. У консоль будуть виведені результати її роботи.
 
 // console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
 // console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
@@ -21,8 +23,16 @@
 // Залиш цей код для перевірки ментором.
 
 
+function makeTransaction(quantity, pricePerDroid ) {
+    const totalPrice=(quantity*pricePerDroid);
+    return (`You ordered ${quantity} droids worth ${totalPrice} credits!`);
 
+}
+makeTransaction();
 
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
 
 
 
